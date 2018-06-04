@@ -68,9 +68,9 @@
 #define Z_ENABLE_PIN       66   // PK4 / A12
 #define Z_MIN_PROBE_PIN    25   // PA3 / AD3
 
-#define E0_STEP_PIN        58   // PF4 / A4
-#define E0_DIR_PIN         59   // PF5 / A5
-#define E0_ENABLE_PIN      57   // PF3 / A3
+#define E0_STEP_PIN        32 //58   // PF4 / A4
+#define E0_DIR_PIN         33 //59   // PF5 / A5
+#define E0_ENABLE_PIN      35 //57   // PF3 / A3
 
 //
 // Temperature Sensors
@@ -82,7 +82,7 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN       4    // PG5 / PWM4
-#define HEATER_BED_PIN     3    // PE5 / PWM3
+#define HEATER_BED_PIN     34 //3    // PE5 / PWM3
 
 #define FAN_PIN            5    // PE3 / PWM5
 
