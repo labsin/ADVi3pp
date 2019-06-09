@@ -1,0 +1,4 @@
+*.tft
+/DGUS-root/**/*.bmp
+/DGUS-root/TFT/**
+/Sketch-Export
