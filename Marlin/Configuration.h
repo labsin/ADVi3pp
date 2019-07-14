@@ -975,10 +975,10 @@
 // Travel limits (mm) after homing, corresponding to endstop positions.
 // @advi3++: The bed dimensions of Wanhao i3 Plus is 200x200x180, X offset is -6.5
 #define X_MIN_POS -6.5
-#define Y_MIN_POS 0
+#define Y_MIN_POS 2.5
 #define Z_MIN_POS 0
 #define X_MAX_POS X_MIN_POS + X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
+#define Y_MAX_POS Y_MIN_POS + Y_BED_SIZE
 #define Z_MAX_POS 180
 
 /**
@@ -1243,8 +1243,11 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing when homing all axes (G28).
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-// @advi3++: From v4, use safe homing
+// @advi3++: From v4, use safe homing. From 4.0.1 only for BLTouch
+
+#if defined(ADVi3PP_BLTOUCH) || defined(ADVi3PP_BLTOUCH3)
 #define Z_SAFE_HOMING
+#endif
 
 #if ENABLED(Z_SAFE_HOMING)
 #if ENABLED(ADVi3PP_PROBE) // @advi3++: In the middle of the bed
