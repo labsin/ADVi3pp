@@ -922,7 +922,7 @@
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
 // @advi3++: Mark II probe is fix
-#ifdef ADVi3PP_54
+#if defined(ADVi3PP_54) || defined(ADVi3PP_PROX)
 #define FIX_MOUNTED_PROBE
 #endif
 

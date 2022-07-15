@@ -47,6 +47,9 @@ const FlashChar* get_sensor_name(size_t index)
 #elif defined(ADVi3PP_54)
     auto mark2               = F("Mark II");
     static const FlashChar* names[NB_SENSOR_POSITIONS + 1] = {your, mark2, teaching_tech_side, advi3pp};
+#elif defined(ADVi3PP_PROX)
+    auto mark2               = F("Prox");
+    static const FlashChar* names[NB_SENSOR_POSITIONS + 1] = {your, mark2, teaching_tech_side, advi3pp};
 #else
 #error "ADVi3PP_PROBE is defined but the kind of probe is unknown"
 #endif
@@ -65,6 +68,10 @@ const SensorPosition SENSOR_POSITION[NB_SENSOR_POSITIONS] =
 #elif defined(ADVi3PP_54)
     {     0,  6000 },    // Mark II
     { -2400, -3800 },    // Teaching Tech Left
+    { -2800, -4000 }     // ADVi3++ Left
+#elif defined(ADVi3PP_PROX)
+    {     0,  6000 },    // Mark II
+    { -2400, -4500 },    // Teaching Tech Left
     { -2800, -4000 }     // ADVi3++ Left
 #else
 #error "ADVi3PP_PROBE is defined but the kind of probe is unknown"

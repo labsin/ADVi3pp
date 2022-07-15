@@ -44,6 +44,9 @@
     #define Z_STOP_PIN          25   // PA3 / AD3
     #define Z_MIN_PROBE_PIN     25   // PA3 / AD3
     #define SERVO0_PIN          40   // PG1 / !RD
+#elif defined(ADVi3PP_PROX)
+    #define Z_STOP_PIN          32   // PC5 / A13
+    #define Z_MIN_PROBE_PIN     32   // PC5 / A13
 #else
     #define Z_STOP_PIN          23   // PA1 / AD1
 #endif
