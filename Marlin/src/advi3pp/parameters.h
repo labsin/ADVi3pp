@@ -73,6 +73,6 @@
     #define HAS_FILAMENT_SENSOR
 #endif
 
-#if defined(BLTOUCH) || defined(ADVi3PP_54)
+#if defined(BLTOUCH) || defined(ADVi3PP_54) || defined(ADVi3PP_PROX)
     #define ADVi3PP_PROBE 1
 #endif
