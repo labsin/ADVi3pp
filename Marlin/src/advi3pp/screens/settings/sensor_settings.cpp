@@ -70,8 +70,8 @@ const SensorPosition SENSOR_POSITION[NB_SENSOR_POSITIONS] =
     { -2400, -3800 },    // Teaching Tech Left
     { -2800, -4000 }     // ADVi3++ Left
 #elif defined(ADVi3PP_PROX)
-    {     0,  6000 },    // Mark II
-    { -2400, -4500 },    // Teaching Tech Left
+    { -2400, -4500 },    // Proxy
+    { -2400, -3800 },    // Teaching Tech Left
     { -2800, -4000 }     // ADVi3++ Left
 #else
 #error "ADVi3PP_PROBE is defined but the kind of probe is unknown"
